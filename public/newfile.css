@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: aliceblue;
+}
+.store-result{
+    display: grid;
+    place-items: center;
+    background-color: #fff;
+    box-shadow: 0px 12px 23px -3px #434244;
+    border-radius: 5px;
+    margin-top: 2em!important;
+    transition: ease-in-out 0.25s;
+}
+.store-result:hover{
+  box-shadow: 0 5px 15px 0 #5a5a5a;
+}
+.store-result .message{
+    width: 100%;
+    font-weight: 500;
+    border-bottom: 1px solid lightgray;
+    font-size: 1.6em;
+    text-align: center;
+    padding: 20px;
+}
+.res {
+    padding: 20px;
+    color: rgb(68, 106, 228);
+    font-weight: 500;
+    line-height: 1.7em;
+    max-width: 90%;
+}
+.btn button{
+    margin:23px 5px;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid rgb(94, 128, 192);
+    color: rgb(94, 128, 192);
+    font-size: 1em;
+    cursor: pointer;
+     background: transparent;
+    outline: none;
+    transition: ease-in-out 0.25s;
+}
+.btn button a{
+    text-decoration: none;
+}
+.btn button a:hover {
+    color: #fff;
+    background-color: rgb(94, 128, 192);
+  }
+  .copyright{
+    text-align: center;
+    margin: 2em;
+    font-size: 1em;
+    color: rgb(245 245 220 / 18%);
+}
