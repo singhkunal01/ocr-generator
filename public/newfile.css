@@ -40,7 +40,6 @@ body {
     width: 100px;
     border-radius: 5px;
     border: 1px solid rgb(94, 128, 192);
-    color: rgb(94, 128, 192);
     font-size: 1em;
     cursor: pointer;
      background: transparent;
@@ -48,10 +47,13 @@ body {
     transition: ease-in-out 0.25s;
 }
 .btn button a{
+  color: rgb(94, 128, 192);
     text-decoration: none;
 }
-.btn button a:hover {
+.btn button:hover a{
     color: #fff;
+  }
+  .btn button:hover{
     background-color: rgb(94, 128, 192);
   }
   .copyright{

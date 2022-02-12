@@ -53,9 +53,9 @@ app.post('/upload', (req, res) => {
 });
 //to make it run properly use ROUTES so start making routes to make it work
 //start up the sever
-let PORT = 8080 || process.env.PORT;
+let port =  process.env.PORT || 8080;
 // NOTE: Here  process.env.PORT this automatically recognise the port number when we upload the file on the server
 
-app.listen(PORT, () => {
-  console.log('Server starts running..Here we go on the Port ' , PORT);
+app.listen(port, () => {
+  console.log('Server starts running..Here we go on the Port ' , port);
 })
