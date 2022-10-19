@@ -7,58 +7,96 @@
 body {
   background-color: aliceblue;
 }
-.store-result{
-    display: grid;
-    place-items: center;
-    background-color: #fff;
-    box-shadow: 0px 12px 23px -3px #434244;
-    border-radius: 5px;
-    margin-top: 2em!important;
-    transition: ease-in-out 0.25s;
+.store-result {
+  display: grid;
+  place-items: center;
+  background-color: #fff;
+  box-shadow: 0px 12px 23px -3px #434244;
+  border-radius: 5px;
+  margin-top: 2em !important;
+  transition: ease-in-out 0.25s;
 }
-.store-result:hover{
+.store-result:hover {
   box-shadow: 0 5px 15px 0 #5a5a5a;
 }
-.store-result .message{
-    width: 100%;
-    font-weight: 500;
-    border-bottom: 1px solid lightgray;
-    font-size: 1.6em;
-    text-align: center;
-    padding: 20px;
+.store-result .message {
+  width: 100%;
+  font-weight: 500;
+  border-bottom: 1px solid lightgray;
+  font-size: 1.6em;
+  text-align: center;
+  padding: 20px;
 }
 .res {
-    padding: 20px;
-    color: rgb(68, 106, 228);
-    font-weight: 500;
-    line-height: 1.7em;
-    max-width: 90%;
+  padding: 20px;
+  color: rgb(68, 106, 228);
+  font-weight: 500;
+  line-height: 1.7em;
+  max-width: 90%;
 }
-.btn button{
-    margin:23px 5px;
-    height: 40px;
-    width: 100px;
-    border-radius: 5px;
-    border: 1px solid rgb(94, 128, 192);
-    font-size: 1em;
-    cursor: pointer;
-     background: transparent;
-    outline: none;
-    transition: ease-in-out 0.25s;
+.btn button {
+  margin: 23px 5px;
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid rgb(94, 128, 192);
+  font-size: 1em;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  transition: ease-in-out 0.25s;
 }
-.btn button a{
+.btn button a {
   color: rgb(94, 128, 192);
-    text-decoration: none;
+  text-decoration: none;
 }
-.btn button:hover a{
-    color: #fff;
+.btn button:hover a {
+  color: #fff;
+}
+.btn button:hover {
+  background-color: rgb(94, 128, 192);
+}
+.copyright {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+}
+.copyright a {
+  color: rgb(156, 181, 249);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* adding media queries */
+
+@media screen and (max-width: 740px) {
+  form {
+    width: 520px;
   }
-  .btn button:hover{
-    background-color: rgb(94, 128, 192);
+  .copyright {
+    left: 30%;
   }
-  .copyright{
-    text-align: center;
-    margin: 2em;
-    font-size: 1em;
-    color: rgb(245 245 220 / 18%);
+}
+@media screen and (max-width: 640px) {
+  .copyright {
+    position: absolute;
+    left: 27%;
+  }
+  form {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 465px) {
+  header {
+  font-size: 22px;
+}
+  form {
+    width: 360px;
+  }
+  input,button{
+    font-size:.8em ;
+  }
 }

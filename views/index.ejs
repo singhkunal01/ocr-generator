@@ -37,16 +37,16 @@
                 <button type="submit">Convert</button>
             </div>
         </form>
+        <p class="copyright">Build With ❤ by <a href="https://github.com/singhkunal01" rel="noreferrer" target="_blank">Kunal Singh</a></p>
     </div>
-    <p class="copyright">&copy;singhkunal01</p>
 <script >
     const submitBtn = document.querySelector('.convert-btn button');
     submitBtn.addEventListener('click',checkIfButtonClicked);
     function checkIfButtonClicked(){
         if(document.getElementById('choose-file').value=='' ) {
             alert('Please Upload Something.');
+            return;
          }
-         return;
     }
 </script>
 </body>

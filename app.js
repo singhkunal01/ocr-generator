@@ -40,6 +40,7 @@ app.post('/upload', (req, res) => {
         .recognize(data, "eng", { __dirname: '1' })
         .progress(progress => {
           // console.log('Progress -> ',progress);
+          // document.querySelector(".convert-btn").innerText=`Converting..`;
         })
         .then(result => {
           // res.send(result.text)
